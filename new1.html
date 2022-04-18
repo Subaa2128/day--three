@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waterproof Phone</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Stint+Ultra+Condensed&display=swap');
+
+  *{
+   margin: 0;
+   top: 0;
+   box-sizing: border-box;
+   
+  }
+  main{
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+}
+  body{
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+  }
+  .header .content{
+    margin: 40px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(75, 72, 72);
+    line-height: 48px;
+  }
+  .header .content h1{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .header .content p{
+    color: #ccc;
+    font-weight: 100;
+  }
+  .phone img{
+    width: 90%;
+    height: 35%;
+    margin: 0px 20px;
+    background-size: cover;
+  }
+  .phone .content p{
+    font-size: 20px;
+    margin: 30px 20px;
+  }
+  .phone .content h1{
+    font-size: 40px;
+    margin: 30px 20px;
+  }
+  .start h1{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+    line-height: 48px;
+}
+
+ul.techornate-social-share{
+    padding:0;margin: 30px 0;overflow:hidden
+}
+ul.techornate-social-share li{
+    list-style:none;
+    float:left;
+    margin-right:4%;
+    width:48%;
+    margin-bottom:10px;
+    background:#fafafa;
+    overflow:hidden
+}
+ul.techornate-social-share li a{text-decoration:none;display:inline-block;color:#fff;height:40px;width:40px;text-align:center;font-size:14px;line-height:40px;margin-right:16px;position:relative;float:left;transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out}ul.techornate-social-share li a:after{height:0;width:0;top:50%;left:100%;content:'';margin-top:-4px;position:absolute}ul.techornate-social-share li a.facebook{background:#436feb}
+ul.techornate-social-share li a.facebook:after{border:4px solid #436feb;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a.twitter{background:#43c9eb}ul.techornate-social-share li a.twitter:after{border:4px solid #43c9eb;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a.google{background:#f14133}ul.techornate-social-share li a.google:after{border:4px solid #f14133;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a.youtube{background:#b00}ul.techornate-social-share li a.youtube:after{border:4px solid #b00;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a:hover{opacity:.7}ul.techornate-social-share li span{font-size:12px;margin:0;line-height:15px;color:#999;font-weight:700;display:block}ul.techornate-social-share li span.scount-number{margin-top:5px;color:#333}ul.techornate-social-share li:nth-child(2n){margin-right:0} 
+
+.box{
+  margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .form-box{
+    padding: 10px;
+    border-radius: 5px;
+    background: #ccc;
+    /* box-shadow: 10px 10px 15px #c7c4c4, -10px -10px 15px #fff; */
+}
+
+.box .form-box input{
+    font-size: 12px;
+    color: #000;
+    padding: 13px 15px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+/* .box .form-box button{
+    color: #fff;
+    padding: 12px 2px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #4769d8;
+    cursor: pointer;
+} */
+
+.button{
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+}
+
+.button a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 20px 0;
+    width: 200px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    word-spacing: 2px;
+    background: linear-gradient(90deg, #0162c8,#55e7fc);
+}
+
+.para{ 
+    margin: 30px 10px;
+}
+.para h4{
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: left;
+    justify-content: left;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.para p{
+    margin-top: 5px;
+    text-align: left;
+    justify-content: left;
+    font-size: 15px;
+    line-height: 10px ;
+}
+.best {
+  border-bottom: 1px solid #fff;
+  line-height: 20%;
+  margin: 0 10px;
+}
+.best h1{
+  font-size: 40px;
+    margin: 20px 20px;
+}
+.best .div1{
+  background: none;
+  float: left;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.best .div2{
+  background: none;
+  float: right;
+  margin: 10px 180px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.best .div1 li,
+.best .div2 li{
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 255, 0);
+  padding-bottom: 10px;
+  line-height: 48px;
+}
+.best .edit{
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(178, 141, 141);
+  line-height: 48px;
+}
+.best .edit span{
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.explain .content h1{
+  margin: 30px 20px;
+  font-size: 30px;
+}
+.explain .content img{
+  margin-left: 190px;
+  width: 70%;
+  height: 40%;
+}
+.explain .content p{
+  margin: 20px 30px;
+  font-size: 20px;
+}
+.explain .content p span{
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 255, 0);
+}
+.explain .content h4{
+  margin: 20px 30px;
+  font-size: 20px;
+  font-weight: 100;
+  border-bottom: 1px solid #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cards{
+  color: #000;
+  width: 85%;
+  margin: 30px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 70px;
+}
+.cards .card{
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.cards .card img{
+  border-radius: 15px;
+  width: 100%;
+  height: 50%;
+}
+.cards .content{
+  text-align: center;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+  <section class="header">
+    <div class="content">
+      <h1>Discover the Newest Waterproof and Fast Smartphones that Come on Sale</h1>
+      <p>User . <span>March 22, 2022</span></p>
+    </div>
+  </section>
+  <main>
+  <section class="phone">
+    <img src="p1.jpg">
+    <div class="content">
+      <p>Water resistance has become one of the must-have features among premium smartphones. 
+        More and more smartphone manufacturers are jumping on the bandwagon, and while no phone is truly waterproof, 
+        most will survive a dunk or two in a pool. So here are the best waterproof phones to consider if you don’t want to worry about the weather.</p>
+      <h1>Understanding IP ratings: Do you need a waterproof phone?</h1>  
+    </div>
+    <img src="p2.jpg">
+
+  </section>
+
+
+  <aside class="start">
+    <h1>stay in touch:</h1>
+
+        <ul class="techornate-social-share"> 
+            <li> <a href="#" class="facebook"><i class="fab fa-facebook"></i></a> <span class="scount-number">44,143</span> <span>Fans</span></li> 
+            <li> <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> <span class="scount-number">39,505</span> <span>Followers</span></li> 
+            <li> <a href="#" class="google"><i class="fab fa-google-plus"></i></a> <span class="scount-number">25,203</span> <span>Followers</span></li> 
+            <li> <a href="#" class="youtube"><i class="fab fa-youtube"></i></a><span class="scount-number">7,456</span> <span>Subscribers</span></li> 
+        </ul>
+    <h1>news letter</h1>
+
+         <div class="box">
+             <form action="#">
+                 <div class="form-box">
+                     <input type="text" name="EmailAddress" placeholder="Enter Your Email">
+                     <!-- <button type="submit">Subscribe</button> -->
+                 </div>
+             </form>
+         </div>
+    <div class="button">
+        <a href="#">I Want In</a>
+    </div>
+
+    <h1>don't miss</h1>
+
+    <div class="para">
+        <h4>Discover the Newest Waterproof and Fast Smartphones that Come on Sale</h4>
+        <p>April 6, 2022</p>
+        <h4>New Small Speaker Review: Pricing is Not Always the Only Criteria</h4>
+        <p>April 6, 2022</p>
+        <h4>Apple Electronics Climb the List of the Top Gadgets in Forbes Magazine</h4>
+        <p>April 6, 2022</p>
+        <h4>Technology Will Help Keep Your Home from Becoming Obsolete</h4>
+        <p>April 6, 2022</p>
+        <h4>Things to Look For in a Financial Trading Platform Environment</h4>
+        <p>April 6, 2022</p>
+    </div>
+</aside>
+</main>
+
+<section class="best">
+  <h1>The best waterproof phones</h1>
+  <div class="div1">
+  <ul>
+    <li>samsung galaxy s22 series</li>
+    <li>samsung galaxy s21 FE</li>
+    <li>vivo x70 pro plus</li>
+    <li>apple phone 13 series</li>
+    <li>xiaomi 11t and 11t pro</li>
+  </ul>
+</div>
+<div class="div2">
+  <ul>
+    <li>oppo find x5 pro</li>
+    <li>sony xperia 1 lll and xperia 5 lll</li>
+    <li>onePlus 9 pro</li>
+    <li>google pixel 6 series</li>
+    <li>samsung galaxy z fold 3 and z flip 3</li>
+  </ul>  
+</div>
+<div class="edit">
+  <p><span>Editor’s note:</span><i>We’ll regularly update this list of the best waterproof phones as new devices launch.</i> </p>
+</div>
+</section>
+
+<section class="explain">
+  <div class="content">
+    <div class="h">
+    <h1>Samsung Galaxy S22 series</h1>
+    <img src="p3.jpg">
+    <p>Samsung has offered water-resistant flagships since 2014’s Galaxy S5 — except for 2015’s Galaxy S6 series. The <span>Galaxy S22 series</span> is no different, offering IP68 water and dust resistance. So your phone should theoretically withstand a dunk in the pool just fine.</p>
+    <p>The Galaxy S22 family also stands out thanks to some impressive specs, featuring a Snapdragon 8 Gen 1 or Exynos 2200 processor, up to 12GB of RAM on the S22 Ultra, big batteries, and great screens with 120Hz refresh rates. In plain English, you’re getting a speedy phone with a sharp, smooth display, and an overall fantastic experience across the board.</p>
+    <h4>Samsung is also upping the ante for camera capabilities, delivering high-resolution sensors, 8K recording, and neat features. Just don’t expect a 3.5mm port, though, so you’ll have to venture back a few years to the S10 family if you want a headphone jack.</h4>
+  </div>
+    <div class="h">
+      <h1>Samsung Galaxy S21 FE</h1>
+      <img src="p4.jpg">
+      <p>The <span>Samsung Galaxy S21 FE</span> was released earlier in 2022, and it’s one of the best waterproof phones if you don’t want to spend more money on a Galaxy S22 device. The design and build quality aren’t as good as in the premium Galaxy phones, but you’ll pay significantly less for the Galaxy S21 FE. Not to mention it still comes with an IP68 certification.</p>
+      <h4>Otherwise, the phone offers all the best features we saw on the Galaxy S21 series. This includes a Snapdragon 888 processor, up to 8GB of RAM, as much as 256GB of storage, and a 6.4-inch Full HD screen with a smooth 120Hz refresh rate. Additionally, you’ll get a 4,500mAh battery and a triple camera system.</h4>
+    </div>
+    <div class="h">
+      <h1>Vivo X70 Pro Plus</h1>
+      <img src="p5.jpg">
+      <p>The <span> X70 Pro Plus</span> isn’t cheap, but it is worth taking a spot on this list of the best waterproof phones. Aside from an IP68 rating, the phone comes packed with powerful specs and a gorgeous design.</p>
+      <p>Performance is stunning, thanks to its Snapdragon 888 Plus and 12GB of RAM. It also has a pretty large battery, but you can charge it quickly even if it dies, as it features 55W wired and 50W wireless charging. We can’t forget the large screen, which touts a 120Hz refresh rate and a gorgeous QHD+ AMOLED panel.</p>
+      <h4>Another prominent feature is the camera system. Not only is it versatile, featuring multiple lenses and excellent image quality, but it also comes with a smooth gimbal video feature that will make your clips much more stable. The device has its downsides, though. It may be a bit too large for some, and we aren’t fans of the zoom camera. It’s also pretty hard to get outside Asia, but you can find sellers that import it.</h4>
+    </div>
+    <div class="h">
+      <h1>Apple iPhone 13 series</h1>
+      <img src="p6.jpeg">
+      <p>While we’ve managed to stick with almost all Android-powered devices on this list, we would be remiss to skip the iPhone 13 family. The four-device lineup packs a serious iOS punch, and each version is complete with an IP68 rating.</p>
+      <p>Apple’s iPhone 13 Mini is a perfect example of how far tiny flagships have come. It packs just a 5.4-inch display, yet it keeps up with the rest of the iPhone 13 series thanks to the A15 Bionic chip and powerful camera array. All four devices pack the same chipset, and the iPhone 13 is the same size as the <span>iPhone 13 Pro</span> — a comfortable 6.1 inches.</p>
+      <h4>No matter which way you go, the iPhone 13 family is your best chance to try iOS on a waterproof phone.</h4>
+    </div>
+    <div class="h">
+      <h1>Xiaomi 11T and 11T Pro</h1>
+      <img src="p7.webp">
+      <p>Xiaomi is one of the biggest phone manufacturers in the world, and there’s no doubt they make some great handsets. Among them are the Xiaomi 11T and 11T, two capable waterproof phones that sport an IP53 rating.</p>
+      <h4>Aside from the waterproof design, you’ll also notice great designs, powerful processors (Dimensity 1200 or Snapdragon 888), 8-12GB of RAM, a capable triple-camera system, and a 5,000mAh battery. The display is also gorgeous, featuring a 6.67-inch AMOLED panel with a 120Hz refresh rate.</h4>
+    </div>
+    <div class="h">
+      <h1>Oppo Find X5 Pro</h1>
+      <img src="p8.webp">
+      <p>Oppo’s Find X series is mainly known for its unique, futuristic look, and the <span> Find X5 Pro</span> follows suit. It’s gorgeous, and it’s easily one of the best waterproof phones, featuring an IP68 rating. It’s also a costly phone, but it makes no sacrifices.</p>
+      <h4>This high-end device has all the powerful specs you could ask for. It touts a Snapdragon 8 Gen 1, 8-12GB of RAM, and up to 512GB of storage. You get a 6.7-inch QHD display with a 120Hz refresh rate. There’s also a large 5,000mAh inside. Not to mention the impressive camera system, sporting a couple 50MP and another 13MP shooter.</h4>
+    </div>
+    <div class="h">
+      <h1>Sony Xperia 1 III and 5 III</h1>
+      <img src="p9.jpg">
+      <p>Sony is the original big brand to offer water-resistant Android phones, and it’s keeping this tradition alive with the <span>Xperia 1 III</span>. The new flagship brings IP68 water/dust resistance while also being one of the few devices to offer a 3.5mm port. You can also go for a slightly more affordable approach with the Xperia 5 III.</p>
+      <h4>It isn’t all perfect here, though, as the phones lack mmWave 5G support. But then again, sub-6Ghz is the dominant standard around the world. Furthermore, the Xperia 1 III is one of the more expensive flagships of 2021. The Xperia 5 III is a little easier to stomach, but it’s still not cheap.</h4>
+    </div>
+    <div class="h">
+      <h1>OnePlus 9 Pro</h1>
+      <img src="p10.jpg">
+      <p>OnePlus has carried over its waterproofing strategy into 2021, and the OnePlus 9 Pro indeed packs an IP68 rating. Technically, the <span>OnePlus 9</span> is a waterproof phone, too, though only on carrier models. This is presumably due to carriers footing the bill for certification.</p>
+      <h4>You should also keep an eye open for the OnePlus 10 Pro, which has been launched in China, and will soon be released globally.</h4>
+    </div>
+    <div class="h">
+      <h1>Google Pixel 6 series</h1>
+      <img src="p11.jpg">
+      <p>As usual, Google is closing the year with its Pixel launch, and this time we have two winners. This time around, Google is back on the race against flagship competitors, offering powerful specs, a gorgeous new design, and prices that compete very strongly. All things combined, and the fact that they sport an IP68 rating, make the<span> Google Pixel 6 and Pixel 6 Pro</span> some of the best waterproof phones in the market.</p>
+      <p>The Pixel 6 starts at just $699 (MSRP) and rocks way too much for what it costs. It offers Google’s new Tensor chipset, 8GB of RAM, and 128GB at its base configuration. The 6.4-inch QHD+ AMOLED display is gorgeous, and it features a 90Hz refresh rate. Meanwhile, the Pro version comes with a larger 6.71-inch screen, the same Tensor processor, 12GB of RAM, and 128GB of storage at its base configuration.</p>
+      <h4>The Google Pixel 5a has an IP67 rating if you’re looking to spend less. It’s a great budget phone with specs good enough for most casual users.</h4>
+    </div>
+    <div class="h">
+      <h1>Samsung Galaxy Z Fold 3 and Z Flip 3</h1>
+      <img src="p12.webp">
+      <p>Not fond of traditional devices? The <span>Samsung Galaxy Z Fold 3 and Z Flip 3 </span>offer a very interesting proposition. These devices can be folded, and it seems foldable phones are finally becoming waterproof phones, as both of these come with an IPX8 rating. This means they can handle a dunk, but there’s no solid ingress protection, so try to avoid dust and other particles.</p>
+      <p>Aside from their fun form factors, these are very capable phones too. Both feature a Snapdragon 888 processor and a 120Hz refresh rate screen. Of course, the Galaxy Z Fold 3 is the more powerful of the two. It has 12GB of RAM, as much as 512GB of storage, three 12MP cameras, a 4,400mAh battery, and a large 7.6-inch internal display. The outer screen measures in at 6.2 inches.</p>
+      <h4>The Galaxy Z Flip 3 is a more portable foldable phone that can fit anywhere, yet it still packs a punch. You get 8GB of RAM, a 6.7-inch AMOLED screen, dual 12MP cameras, and a 3,300mAh battery.</h4>
+      </div>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <img src="m2.jpg" alt="">
+    <div class="content">
+      <h2>New Small Speaker Review: Pricing is Not Always the Only Criteria</h2>
+      <p>user <span>- april 6, 2022</span></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="m3.webp" alt="">
+    <div class="content">
+      <h2>Apple Electronics Climb the List of the Top Gadgets in Forbes Magazine</h2>
+      <p>user <span>- april 6, 2022</span></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="m4.webp" alt="">
+    <div class="content">
+      <h2>Technology Will Help Keep Your Home from Becoming Obsolete</h2>
+      <p>user <span>- april 6, 2022</span></p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
