@@ -1,0 +1,216 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 95% ;
+}
+.heading_view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5em;
+    margin-left: 5px;
+}
+.heading h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+}
+.view h5{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.view{
+    padding-left:600px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1em ;
+    gap: 1.5em;
+}
+.head a{
+    text-decoration: none;
+    color: black;
+}
+.head h1{
+    text-align: center;
+    font-family: 'Ledger', serif;
+    font-size: 45px;
+    line-height: 45px;
+}
+.para p{
+    font-size: 19px;
+    font-family: 'Akshar', sans-serif;
+}
+.head h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.head h1 span{
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    padding: 6px;
+}
+.imagebx{
+    position: relative;
+    max-width: 600px;
+}
+.imagebx img{
+    height: 13rem;
+    width: 15rem;
+    cursor: pointer;
+    opacity: 1;
+}
+.imagebx img:hover{
+    opacity: 0.8;
+}
+.imagebx h5{
+    position: absolute;
+    left: -12px;
+    border-radius: 50px;
+    bottom: 30px;
+    font-size: 10px;
+    box-sizing: border-box;
+    width: 35%;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+.main_head h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 2em;
+}
+.user h5 {
+    line-height: 50px;
+    font-size: 12px;
+    margin-right: 35px;
+}
+.user span{
+    color: rgb(156, 149, 149);
+}
+.image_main img{
+    width: 90%;
+    height: 60vh;
+}
+.btn{
+    text-align: center;
+}
+button{
+    padding: 15px;
+    width: 150px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid #d6c492;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button span{
+    background: #6a624c;
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+  
+}
+@keyframes mymove { 
+     70% {box-shadow: 10px 20px 30px grey;}
+}
+.left{
+    border-left: 5px solid black;
+    padding: 30px;
+    animation: mymove 5s infinite;
+    font-size: 13px;
+}
+.right{
+    padding-left: 60px;
+}
+.image_main img{
+    cursor: pointer;
+    opacity: 1;
+}
+.image_main img:hover{
+    opacity: 0.8;
+}
+.right h5{
+    line-height: 4;
+    font-size: 17px;
+    font-weight: 1200;
+}
+.para_main h1{
+    font-family: 'Akshar', sans-serif;
+   margin-top: 10px;
+   cursor: pointer;
+}
+address{
+    font-size: 2px;
+}
+.para_main a{
+    text-decoration: none;
+    color: black;
+}
+.para_main h4{
+    line-height: 50px;
+    border-bottom: 1px solid rgb(223, 219, 219);
+}
+.para_main h4 span{
+    color: rgb(161, 155, 155);
+}
+address{
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 10px;
+    width: 50px;
+    height: 14px;
+    margin-left: 2px;
+}
+.technology h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.technology h1{
+    font-family: 'Akshar', sans-serif;
+    font-size: 48px;
+    cursor: pointer;
+}
+.technology h1:hover{
+    text-decoration: underline;
+}
+.exclusive{
+    background-color: red;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 8px;
+}
