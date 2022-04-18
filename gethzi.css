@@ -1,0 +1,695 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.container h1{
+    text-align: left;
+
+}
+.item{ 
+    grid-area: header;
+    color: aliceblue;
+    padding:35px 0 0 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows: repeat;
+    grid-gap: 10px;
+    background-color:black;
+    margin:100px 87px;
+    padding:10px;
+    grid-template-areas: 'header header header';
+    
+    
+  }
+.container > div{
+    background-color: black;
+    color:aliceblue;
+    text-align: left;
+    padding: 20px 0 0 3px;
+    margin:10px 20px ;
+    border-top: 0.5px solid grey;
+    cursor: pointer;
+} 
+span{
+    font-family:cursive;
+    font-size: small;
+    color:rgb(20, 19, 19);
+    
+}
+
+.button{ 
+    grid-area: footer;
+    color: aliceblue;
+    
+}
+.head{
+    margin:0 0 0 90px;
+    
+    bottom:5px;
+    font-size: 32px;
+}
+/* border line */
+.border{
+    border-bottom:3px solid black;
+    margin:90px;
+}
+.heading{
+    text-align: center;
+    font-size:50px;
+}
+.column{
+    
+    display: grid;
+    grid-gap: 16px;
+    overflow-x:scroll;
+    padding: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    margin-left:75px;
+    margin-right: 85px;
+}
+img{
+    width:380px;
+    height:295px;
+    display:grid;
+    
+}
+.hai{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+}
+a.hair1:link {color:black;text-decoration:none;}
+a.hair1:visited {color:black;text-decoration:none;}
+a.hair1:hover{text-decoration: underline;}
+
+.fil{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.fil1:link {color:black;text-decoration:none;}
+ a.fil1:visited {color:black;text-decoration:none;}
+ a.fil1:hover{text-decoration: underline;}
+
+ .pic{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.pic1:link {color:black;text-decoration:none;}
+ a.pic1:visited {color:black;text-decoration:none;}
+ a.pic1:hover{text-decoration: underline;}
+
+ .mobb{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mobb1:link {color:black;text-decoration:none;}
+ a.mobb1:visited {color:black;text-decoration:none;}
+ a.mobb1:hover{text-decoration: underline;} 
+ 
+ .mann{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mann1:link {color:black;text-decoration:none;}
+ a.mann1:visited {color:black;text-decoration:none;}
+ a.mann1:hover{text-decoration: underline;} 
+
+ .blu{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.blu1:link {color:black;text-decoration:none;}
+ a.blu1:visited {color:black;text-decoration:none;}
+ a.blu1:hover{text-decoration: underline;}
+ 
+ .duba{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.duba1:link {color:black;text-decoration:none;}
+ a.duba1:visited {color:black;text-decoration:none;}
+ a.duba1:hover{text-decoration: underline;} 
+
+ .india{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.india1:link {color:black;text-decoration:none;}
+ a.india1:visited {color:black;text-decoration:none;}
+ a.india1:hover{text-decoration: underline;} 
+
+ .couple{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.couple1:link {color:black;text-decoration:none;}
+ a.couple1:visited {color:black;text-decoration:none;}
+ a.couple1:hover{text-decoration: underline;} 
+
+ .dusk{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.dusk1:link {color:black;text-decoration:none;}
+ a.dusk1:visited {color:black;text-decoration:none;}
+ a.dusk1:hover{text-decoration: underline;} 
+
+ .hai{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.hai1:link {color:black;text-decoration:none;}
+ a.hai1:visited {color:black;text-decoration:none;}
+ a.hai1:hover{text-decoration: underline;} 
+
+ .fil{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.fil1:link {color:black;text-decoration:none;}
+ a.fil1:visited {color:black;text-decoration:none;}
+ a.fil1:hover{text-decoration: underline;}
+
+ .pic{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.pic1:link {color:black;text-decoration:none;}
+ a.pic1:visited {color:black;text-decoration:none;}
+ a.pic1:hover{text-decoration: underline;}
+
+ .mobb{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mobb1:link {color:black;text-decoration:none;}
+ a.mobb1:visited {color:black;text-decoration:none;}
+ a.mobb1:hover{text-decoration: underline;}
+
+ .mann{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mann1:link {color:black;text-decoration:none;}
+ a.mann1:visited {color:black;text-decoration:none;}
+ a.mann1:hover{text-decoration: underline;}
+
+ .blu{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.blu1:link {color:black;text-decoration:none;}
+ a.blu1:visited {color:black;text-decoration:none;}
+ a.blu1:hover{text-decoration: underline;}
+
+ .duba{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.duba1:link {color:black;text-decoration:none;}
+ a.duba1:visited {color:black;text-decoration:none;}
+ a.duba1:hover{text-decoration: underline;}
+
+ .india{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.india1:link {color:black;text-decoration:none;}
+ a.india1:visited {color:black;text-decoration:none;}
+ a.india1:hover{text-decoration: underline;}
+
+ .couple{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.couple1:link {color:black;text-decoration:none;}
+ a.couple1:visited {color:black;text-decoration:none;}
+ a.couple1:hover{text-decoration: underline;}
+
+ .dusk{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.dusk1:link {color:black;text-decoration:none;}
+ a.dusk1:visited {color:black;text-decoration:none;}
+ a.dusk1:hover{text-decoration: underline;}
+
+ .hai{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.hai1:link {color:black;text-decoration:none;}
+ a.hai1:visited {color:black;text-decoration:none;}
+ a.hai1:hover{text-decoration: underline;}
+
+ .fil{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.fil1:link {color:black;text-decoration:none;}
+ a.fil1:visited {color:black;text-decoration:none;}
+ a.fil1:hover{text-decoration: underline;}
+
+ .pic{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.pic1:link {color:black;text-decoration:none;}
+ a.pic1:visited {color:black;text-decoration:none;}
+ a.pic1:hover{text-decoration: underline;}
+
+ .mobb{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mobb1:link {color:black;text-decoration:none;}
+ a.mobb1:visited {color:black;text-decoration:none;}
+ a.mobb1:hover{text-decoration: underline;}
+
+ .mann{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mann1:link {color:black;text-decoration:none;}
+ a.mann1:visited {color:black;text-decoration:none;}
+ a.mann1:hover{text-decoration: underline;}
+
+ .blu{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.blu1:link {color:black;text-decoration:none;}
+ a.blu1:visited {color:black;text-decoration:none;}
+ a.blu1:hover{text-decoration: underline;}
+
+ .duba{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.duba1:link {color:black;text-decoration:none;}
+ a.duba1:visited {color:black;text-decoration:none;}
+ a.duba1:hover{text-decoration: underline;}
+
+ .india{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.india1:link {color:black;text-decoration:none;}
+ a.india1:visited {color:black;text-decoration:none;}
+ a.india1:hover{text-decoration: underline;}
+
+ .couple{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.couple1:link {color:black;text-decoration:none;}
+ a.couple1:visited {color:black;text-decoration:none;}
+ a.couple1:hover{text-decoration: underline;}
+
+ .dusk{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.dusk1:link {color:black;text-decoration:none;}
+ a.dusk1:visited {color:black;text-decoration:none;}
+ a.dusk1:hover{text-decoration: underline;}
+
+ .hai{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.hai1:link {color:black;text-decoration:none;}
+ a.hai1:visited {color:black;text-decoration:none;}
+ a.hai1:hover{text-decoration: underline;}
+
+ .fil{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.fil1:link {color:black;text-decoration:none;}
+ a.fil1:visited {color:black;text-decoration:none;}
+ a.fil1:hover{text-decoration: underline;}
+
+ .pic{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.pic1:link {color:black;text-decoration:none;}
+ a.pic1:visited {color:black;text-decoration:none;}
+ a.pic1:hover{text-decoration: underline;}
+
+ .mobb{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mobb1:link {color:black;text-decoration:none;}
+ a.mobb1:visited {color:black;text-decoration:none;}
+ a.mobb1:hover{text-decoration: underline;}
+
+ .mann{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mann1:link {color:black;text-decoration:none;}
+ a.mann1:visited {color:black;text-decoration:none;}
+ a.mann1:hover{text-decoration: underline;}
+
+ .blu{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.blu1:link {color:black;text-decoration:none;}
+ a.blu1:visited {color:black;text-decoration:none;}
+ a.blu1:hover{text-decoration: underline;}
+
+ .duba{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.duba1:link {color:black;text-decoration:none;}
+ a.duba1:visited {color:black;text-decoration:none;}
+ a.duba1:hover{text-decoration: underline;}
+
+ .india{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.india1:link {color:black;text-decoration:none;}
+ a.india1:visited {color:black;text-decoration:none;}
+ a.india1:hover{text-decoration: underline;}
+
+ .couple{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.couple1:link {color:black;text-decoration:none;}
+ a.couple1:visited {color:black;text-decoration:none;}
+ a.couple1:hover{text-decoration: underline;}
+
+ .dusk{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.dusk1:link {color:black;text-decoration:none;}
+ a.dusk1:visited {color:black;text-decoration:none;}
+ a.dusk1:hover{text-decoration: underline;}
+
+ .hai{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.hai1:link {color:black;text-decoration:none;}
+ a.hai1:visited {color:black;text-decoration:none;}
+ a.hai1:hover{text-decoration: underline;}
+
+ .fil{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.fil1:link {color:black;text-decoration:none;}
+ a.fil1:visited {color:black;text-decoration:none;}
+ a.fil1:hover{text-decoration: underline;}
+
+ .pic{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.pic1:link {color:black;text-decoration:none;}
+ a.pic1:visited {color:black;text-decoration:none;}
+ a.pic1:hover{text-decoration: underline;}
+
+ .mobb{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mobb1:link {color:black;text-decoration:none;}
+ a.mobb1:visited {color:black;text-decoration:none;}
+ a.mobb1:hover{text-decoration: underline;}
+
+ .mann{
+    background-color: rgba(189, 188, 188, 0.192);
+    padding-bottom:40px;
+    font-size: 22px;
+    border-left: 3px solid black;
+    
+}
+ a.mann1:link {color:black;text-decoration:none;}
+ a.mann1:visited {color:black;text-decoration:none;}
+ a.mann1:hover{text-decoration: underline;}
+
+ 
+ .bg{
+     background-color: rgba(161, 157, 157, 0.425);
+    }
+    .head1{
+        padding:10px;
+        
+        margin:20px 0 0px 80px;
+        
+        font-size: 42px;
+     }
+ .bg1{
+     background-color: black;
+     display:grid;
+ }
+.container1{
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    grid-template-rows: repeat;
+    grid-gap: 3px;
+    margin:10px 50px;
+    background-color:black;
+    padding:20px 0 0 0;
+}
+.container1 > div{
+    color:aliceblue;
+    text-align: left;
+    margin:10px 30px ;
+    cursor: pointer;
+} 
+.items{
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    border-bottom: 0.5px solid grey;
+    padding: 20px 0 30px 3px;
+}
+.list{
+   margin-left:110px;
+   font-size: 15px;
+   color:aliceblue;
+   font-weight: bold;
+}
+.row{
+    font-weight: bold;
+    font-size:16px ;
+}
+ .row1:link {color:black;text-decoration:none;}
+ .row1:visited {color:black;text-decoration:none;}
+ .row1:hover{text-decoration: underline;}
+
+.button{
+    height:50px;
+    width:250px;
+    border-radius: 20px;
+    color:black;
+    border:#fff;
+    
+}
+.button1{
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    height:50px;
+    width:250px;
+    margin-top:10px;
+    border-radius: 20px;
+    text-align: center;
+    cursor:default;
+}
+.button1:hover {
+    background-color:#002ead;
+}
+.icon{
+    display:inline-block;
+    align-items: top;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    margin:10px 0px 0px 700px;
+}
+.icon a{
+    text-decoration: none;
+    color:white;
+}
+.icon .fa-brands{
+    width:200px;
+    
+    padding:20px;
+}
+.icon .fa-brands.fa-facebook{
+         background-color: #002ead;
+}
+.icon .fa-brands.fa-twitter-square{
+    background-color:#4fa3e4;
+}
+.icon .fa-brands.fa-youtube{
+    background-color: #bb0000;
+}
+.icon a:hover {
+   opacity:0.6;
+
+}
+.follow{
+    color:white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:small;
+    
+}
+
+    
+
+
+
