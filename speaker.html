@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Small Speaker Review: Pricing is Not Always the Only Criteria</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Stint+Ultra+Condensed&display=swap');
+
+  *{
+   margin: 0;
+   top: 0;
+   box-sizing: border-box;
+   
+  }
+  main{
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+}
+  body{
+    background-color: rgb(26, 28, 28);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+  }
+  .header .content{
+    margin: 40px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(75, 72, 72);
+    line-height: 48px;
+  }
+  .header .content h1{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .header .content p{
+    color: #ccc;
+    font-weight: 100;
+  }
+  .phone img{
+    width: 90%;
+    height: 35%;
+    margin: 0px 20px;
+    background-size: cover;
+  }
+  .phone .content p{
+    font-size: 20px;
+    margin: 30px 20px;
+  }
+  .phone .content h1{
+    font-size: 40px;
+    margin: 30px 20px;
+  }
+  .start h1{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+    line-height: 48px;
+}
+
+ul.techornate-social-share{
+    padding:0;margin: 30px 0;overflow:hidden
+}
+ul.techornate-social-share li{
+    list-style:none;
+    float:left;
+    margin-right:4%;
+    width:48%;
+    margin-bottom:10px;
+    background:#fafafa;
+    overflow:hidden
+}
+ul.techornate-social-share li a{text-decoration:none;display:inline-block;color:#fff;height:40px;width:40px;text-align:center;font-size:14px;line-height:40px;margin-right:16px;position:relative;float:left;transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out}ul.techornate-social-share li a:after{height:0;width:0;top:50%;left:100%;content:'';margin-top:-4px;position:absolute}ul.techornate-social-share li a.facebook{background:#436feb}
+ul.techornate-social-share li a.facebook:after{border:4px solid #436feb;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a.twitter{background:#43c9eb}ul.techornate-social-share li a.twitter:after{border:4px solid #43c9eb;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a.google{background:#f14133}ul.techornate-social-share li a.google:after{border:4px solid #f14133;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a.youtube{background:#b00}ul.techornate-social-share li a.youtube:after{border:4px solid #b00;border-top-color:transparent;border-bottom-color:transparent;border-right-color:transparent}ul.techornate-social-share li a:hover{opacity:.7}ul.techornate-social-share li span{font-size:12px;margin:0;line-height:15px;color:#999;font-weight:700;display:block}ul.techornate-social-share li span.scount-number{margin-top:5px;color:#333}ul.techornate-social-share li:nth-child(2n){margin-right:0} 
+
+.box{
+  margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .form-box{
+    padding: 10px;
+    border-radius: 5px;
+    background: #ccc;
+    /* box-shadow: 10px 10px 15px #c7c4c4, -10px -10px 15px #fff; */
+}
+
+.box .form-box input{
+    font-size: 12px;
+    color: #000;
+    padding: 13px 15px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+/* .box .form-box button{
+    color: #fff;
+    padding: 12px 2px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #4769d8;
+    cursor: pointer;
+} */
+
+.button{
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+}
+
+.button a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 20px 0;
+    width: 200px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    word-spacing: 2px;
+    background: linear-gradient(90deg, #0162c8,#55e7fc);
+}
+
+.para{ 
+    margin: 30px 10px;
+}
+.para h4{
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: left;
+    justify-content: left;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.para p{
+    margin-top: 5px;
+    text-align: left;
+    justify-content: left;
+    font-size: 15px;
+    line-height: 10px ;
+}
+
+.best h1{
+  font-size: 40px;
+  margin: 20px 20px;
+  text-transform: capitalize;
+}
+.best .div1{
+  background: none;
+  float: left;
+  margin: 10px 20px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.best .div1 li{
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 255, 0);
+  padding-bottom: 10px;
+}
+.explain{
+    margin: 300px 30px;
+    text-align: center;
+}
+.explain .content h1{
+  margin: 30px 20px;
+  font-size: 30px;
+}
+.explain .content img{
+  margin-left: 10px;
+  width: 70%;
+  height: 40%;
+}
+.explain .content p{
+  margin: 20px 30px;
+  font-size: 20px;
+}
+.cards{
+  color: #000;
+  width: 85%;
+  margin: 0px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 70px;
+}
+.cards .card{
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.cards .card img{
+  border-radius: 15px;
+  width: 100%;
+  height: 50%;
+}
+.cards .content{
+  text-align: center;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+  <section class="header">
+    <div class="content">
+      <h1>New Small Speaker Review: Pricing is Not Always the Only Criteria</h1>
+      <p>User . <span>March 22, 2022</span></p>
+    </div>
+  </section>
+  <main>
+  <section class="phone">
+    <img src="s6.jpg">
+    <div class="content">
+      <p>Speakers are used to connect to a computer to generate sound, which are one of the most common output devices. Some speakers are designed to connect with any kind of sound system, while some can be hooked up only with computers.
+        Bluetooth speakers can bring full range audio into any room in your home for not a lot of money, and without taking up much space. A Bluetooth speaker is quite simply the most versatile speaker that you can own. Any time and any place that you need music you've got a simple and effective way to make it happen.
+      </p>
+      <h1>How to choose the best Bluetooth speaker for you??</h1>  
+    </div>
+    <img src="s7.jpg">
+
+  </section>
+
+
+  <aside class="start">
+    <h1>stay in touch:</h1>
+
+        <ul class="techornate-social-share"> 
+            <li> <a href="#" class="facebook"><i class="fab fa-facebook"></i></a> <span class="scount-number">44,143</span> <span>Fans</span></li> 
+            <li> <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> <span class="scount-number">39,505</span> <span>Followers</span></li> 
+            <li> <a href="#" class="google"><i class="fab fa-google-plus"></i></a> <span class="scount-number">25,203</span> <span>Followers</span></li> 
+            <li> <a href="#" class="youtube"><i class="fab fa-youtube"></i></a><span class="scount-number">7,456</span> <span>Subscribers</span></li> 
+        </ul>
+    <h1>news letter</h1>
+
+         <div class="box">
+             <form action="#">
+                 <div class="form-box">
+                     <input type="text" name="EmailAddress" placeholder="Enter Your Email">
+                     <!-- <button type="submit">Subscribe</button> -->
+                 </div>
+             </form>
+         </div>
+    <div class="button">
+        <a href="#">I Want In</a>
+    </div>
+
+    <h1>don't miss</h1>
+
+    <div class="para">
+        <h4>Discover the Newest Waterproof and Fast Smartphones that Come on Sale</h4>
+        <p>April 6, 2022</p>
+        <h4>New Small Speaker Review: Pricing is Not Always the Only Criteria</h4>
+        <p>April 6, 2022</p>
+        <h4>Apple Electronics Climb the List of the Top Gadgets in Forbes Magazine</h4>
+        <p>April 6, 2022</p>
+        <h4>Technology Will Help Keep Your Home from Becoming Obsolete</h4>
+        <p>April 6, 2022</p>
+        <h4>Things to Look For in a Financial Trading Platform Environment</h4>
+        <p>April 6, 2022</p>
+    </div>
+</aside>
+</main>
+
+<section class="best">
+  <h1>The best Bluetooth speakers overall </h1>
+  <div class="div1">
+  <ul>
+    <li> UE Megaboom 3</li>
+    <li>Sonos Roam</li>
+    <li> JBL Go 3</li>
+    <li>LG XBoom Go PL7</li>
+    <li>Tribit StormBox Micro</li>
+  </ul>
+</div>
+</section>
+
+<section class="explain">
+  <div class="content">
+    <div class="h"><hr>
+    <h1>UE Megaboom 3</h1>
+    <img src="s1.webp">
+    <p>Thanks to its excellent sound quality, long battery life and travel-ready ruggedness, the UE Megaboom 3 is the best Bluetooth speaker you can buy right now. This big, bold portable speaker pumps out rich 360-degree sound complete with detailed highs and satisfying low-end, and maxes out at 100 decibels of noise. And with an IP67-rated design, it can survive drops, splashes and a fall into the pool without skipping a beat.</p>
+    <p>The Megaboom 3 is on the bigger side compared to other portable speakers, and unlike many of its competitors, it doesn't have Alexa or Google Assistant support, or any other smart features. But if that’s not a deal breaker, the Megaboom 3's sound quality and ruggedness can't be beat for the price. You can also pair it with older Megaboom and Boom models for a stereo sound experience.</p>
+  </div>
+  <hr>
+    <div class="h">
+      <h1>Sonos Roam</h1>
+      <img src="s2.webp">
+      <p>Building on the success of the Sonos Move, the Sonos Roam is a connected smart speaker at home and powerful Bluetooth beast on the road. It’s much more portable and more affordable than the Move, though, and its Auto TruePlay feature automatically adjusts the sound to suit its surroundings, whether you’re listening in a noisy, urban park or a quaint, airy campground.</p>
+      <p>Although we wish the battery lasted more than 10 hours, it juices up quickly via USB-C or wireless charging. When you return back from your latest excursion, the Sonos Roam should rejoin your larger Sonos system on its own. It also gives you the option to hand off your current soundtrack to the nearest Sonos speaker. Or you could stick to Roam, bringing your voice assistant and streaming services room-to-room, or as far as your Wi-Fi can reach.</p>
+    </div><hr>
+    <div class="h">
+      <h1>JBL Go 3</h1>
+      <img src="s3.jpg">
+      <p>At fewer than 4 inches wide, the only thing smaller than the Go 3 might be its price; even the Anker Soundcore 2 might sweat when seeing this speaker's price tag. And despite the small investment, your return is IP67-rated waterproofing. That means it will survive full submersion in shallow water for half an hour, and full dust-proofing is part of the package as well.</p>
+      <p>Battery life looks poor at 5 hours, but in our testing we could stretch this out to over 10 hours if we didn't go too crazy with the volume. As such, there are better alternatives if you need to fill a large space, but as a personal, portable speaker, the Go 3 is very likeable indeed.</p>
+    </div><hr>
+    <div class="h">
+      <h1>LG XBoom Go PL7</h1>
+      <img src="s4.jpg">
+      <p>Every Bluetooth speaker on this list delivers great sound and functionality, but only the LG XBoom Go PL7 does it while boasting awesome LED lights. This unique Bluetooth speaker packs fully customizable LED rings on either side, adding some unique flair to your pool parties or indoor jam sessions.</p>
+      <p>But the XBoom Go PL7 has much more than looks going for it. The XBoom's appropriately booming sound holds its own against the best Bluetooth speakers in this price range, delivering balanced bass and satisfying treble. And with an IPX5 rating, this speaker can handle sprays or splashes of water and keep on ticking. Factor in its strong 24-hour battery life, and the XBoom Go PL7 is a great Bluetooth speaker that looks as good as it sounds.</p>
+    </div><hr>
+    <div class="h">
+      <h1>Tribit StormBox Micro</h1>
+      <img src="s5.jpg">
+      <p>Sometimes, being small and easy to carry is the most important quality in a Bluetooth speaker. But the inexpensive Tribot StormBox Micro doesn't skimp on sound, either. While it's just 4 inches square, the StormBox Micro has pretty impressive bass, especially for something its size.</p>
+      <p>The speaker has a plastic strap that makes it easy to attach to a backpack or bike, an IP67 water-resistant rating, so it's fully protected against dust and dirt as well as submersion in water. However, there's no aux input, so you have to connect to it via Bluetooth. </p>
+    </div><hr>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <img src="m2.jpg" alt="">
+    <div class="content">
+      <h2>New Small Speaker Review: Pricing is Not Always the Only Criteria</h2>
+      <p>user <span>- april 6, 2022</span></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="m3.webp" alt="">
+    <div class="content">
+      <h2>Apple Electronics Climb the List of the Top Gadgets in Forbes Magazine</h2>
+      <p>user <span>- april 6, 2022</span></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="m4.webp" alt="">
+    <div class="content">
+      <h2>Technology Will Help Keep Your Home from Becoming Obsolete</h2>
+      <p>user <span>- april 6, 2022</span></p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
