@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Stint+Ultra+Condensed&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: none;
     font-family: 'Kanit', sans-serif;
-/* font-family: 'Stint Ultra Condensed', cursive; */
+    overflow-x: hidden;
 }
 
 main{
     display: flex;
-    grid-template-columns: repeat(1, 1fr);
     
 }
 
@@ -207,13 +209,13 @@ main{
 }
 
 .start h1{
-    padding-bottom: 10px;
+    padding: 20px;
     border-bottom: 3px solid #000;
     line-height: 48px;
 }
 
 ul.icon{
-    padding:0;
+    padding:10px;
     margin:0;
     overflow:hidden;
 }
@@ -298,6 +300,7 @@ ul.icon li span.scount-number{
 ul.icon li:nth-child(2n){margin-right:0} 
 
 .box{
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -353,7 +356,7 @@ ul.icon li:nth-child(2n){margin-right:0}
 }
 
 .para{ 
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 .para a{
     text-decoration: none;
@@ -380,12 +383,86 @@ ul.icon li:nth-child(2n){margin-right:0}
 
 
 
-@media (max-width: 768px) {
-    .box-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    
-    
+@media only screen and (max-width: 950px) {
+    main{
+        flex-direction: column;
     }
-    
+    .container .heading{
+        text-align: center;
+    }
+    .container .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, .5fr);
+    }
+    .container .pagination{
+        text-align: center;
+    }
+    .start{
+        position: static;
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+    body{
+        overflow-x: hidden;
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+    }
+    main{
+        display: unset;
+    }
+    .container{
+        padding-bottom: 10px;
+    }
+    .container .heading{
+        text-align: center;
+    }
+    .container .box-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .container .box-container .card{
+        margin: 0 auto;
+    }
+    .container .pagination{
+        display: none;
+    }
+    .start{
+        text-align: center;
+    }
+    .start h1{
+        text-align: center;
+    }
+    ul.icon{
+        width: 100%;
+        border-width: 10px;
+        margin: 0 auto;
+    } 
+    ul.li{
+        display: flex;
+        flex-direction: column;
+    }
+    .box .form-box{
+        padding: 10px 10px;
+    }
+    .box .form-box input{
+        padding: 15px 25px;
+    }
+    .box .form-box button{
+        padding: 15px 25px;
+    }
+    .button a{
+        width: 93%;
+    }
+    .para{
+        text-align: center;
+        font-size: 10px;
+        margin: 20px 10px;
+    }
+    .para p{
+        line-height: 50px;
+    }
 }

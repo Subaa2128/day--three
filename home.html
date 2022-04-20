@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&family=Nanum+Myeongjo:wght@700&family=Paytone+One&family=Righteous&family=Slabo+27px&display=swap');
     *{
         padding: 0;
         margin: 0;
     }
     body{
-        background: rgb(27, 26, 26);
+        background: rgb(0, 0, 0);
         color: #fff;
     }
     .header h1{
@@ -103,6 +104,51 @@
     .icon .fab.fa-youtube{
         background-color: #bb0000;
     }
+    @media screen and (max-width:990px){
+        .header{
+            text-align: center;
+            padding: 0 20px 0 20px;
+            font-size: 40px;
+        }
+        .header .fab{
+            align-items: center;
+            padding: 10px;
+            margin: 0;
+            font-size: 20px;
+        }
+        .header img{
+            width: 100%;
+            height: auto;
+            margin: 0px;
+        }
+    }
+    @media screen and (max-width:500px){
+        .header {
+            text-align: center;
+            padding: 0px 1px;
+            background-color: #000000;
+        }
+        .header img{
+            width: 100%;
+            height: auto;
+            margin: 0px;
+        }
+    }
+    @media screen and (max-width:450px){
+        .header .fab{
+            align-items: center;
+            padding: 10px;
+            margin: 0;
+            font-size: 20px;
+        }
+        .icon .fab{
+            width: 30px;
+        }
+        
+    }
+
+
+    
 </style>
 <body>
     <section class="header">

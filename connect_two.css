@@ -7,12 +7,37 @@
     text-decoration: none;
     list-style: none;
 }
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
 .hero{
 
     width: 90%;
     margin: auto;
     margin-top: 50px;
     
+}
+
+
+.header h1,.header h2{
+    color: white;
+    margin-bottom: 40px;
+}
+.icon{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+.icon a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.icon .fab{
+    padding: 15px;
+    border-radius: 50%;
 }
 
 .header{
@@ -22,16 +47,19 @@
     color: white;
     margin-bottom: 40px;
 }
-.icon{
-    line-height: 6;
-    
-}
+.icon .fa-google-plus {
+    background-color: #da4532;
+}  
+.icon .fa-youtube {
+    background-color:  #bb0000;
+} 
 .image_one img{
     width: 100%;
 }
 .image_one p{
-    color: white;
-    line-height: 8;
+    margin-bottom: 20px;
+    color: gray;
+   
 }
 .para{
     color: white;
@@ -47,32 +75,37 @@
 .blog{
     display: grid;
     grid-template-columns: 60% 40%;
-    max-height: 80vh;
     margin-top: 50px;
-    background-color: rgb(167, 132, 87);
     margin-bottom: 50px;
 }
 .main{
     color: white;
     padding: 2em;
-    line-height: 2;  
+      
 }
 
 .main h4{
     color: greenyellow;
+    margin-bottom: 30px;
+}
+.main p{
+    line-height: 35px;
+    margin-bottom: 30px;
 }
 
 
-
-.image_two img{
-    max-height: 80vh;
+.main img{
+    max-width: 60%;
+    margin: -610px 0px 0px 850px;
 }
 .footer{
     display: grid;
     grid-template-columns: 1fr;
 }
 .image_three img{
-    max-width: 100%;
+    max-width: 90%;
+    align-items: center;
+    margin-right: 30%;
 }
 
 .image_three p{
@@ -94,31 +127,63 @@
 }
 
 
-
 @media (max-width:1350px){
 
     .blog{
         max-height: auto;
         grid-template-columns: 1fr;
     }
-
-    
 }
-@media (max-width:768px){
+@media (max-width:790px){
+    .header{
+        text-align: center;
+        margin: 0px 35px;
+    }
+    .header h1{
+        text-align: center;
+        font-size: 0px;
+    }
+    .icon{
+        text-align: center;
+    }
     .blog{
         max-height: auto;
         grid-template-columns: 1fr;
     }
-     .footer{
-         margin-top: 1000px;
+     .footer p{
+         margin: 10px 0px 10px 20px;
      }
 
-    .image_two img{
-        width: 100%;
+    .main img{
+        max-width: 100%;
+        margin: 10px 10px ;
     }
+    .image_three img{
+        max-width: 96%;
+        margin: -10px 0px 0px 20px;
     }
+}
+@media (max-width:480px){
+    .hero{
+        margin-top: 5px;
+    }
+    .main p{
+        margin: 20px 0px 70px 0px;
+        text-align: center;
+    }
+    .main h4{
+        margin: -50px 0px 30px 0px;
+        text-align: center;
+    }
+    .main img{
+       max-width: 100%;
+       margin: 10px 0px ;
+    }
+    .image_three img{
+        margin: -40px 0px 20px 0px;
+    }
+}
     
-
 
  
 
