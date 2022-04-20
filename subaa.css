@@ -380,15 +380,12 @@ ul.icon li:nth-child(2n){margin-right:0}
 
 
 
-@media only screen and (max-width: 550px) {
-    .container{
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-        grid-template-areas: 
-        ".heading heading heading heading";
-        grid-gap: 0.2rem;
+@media (max-width: 768px) {
+    .box-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
     }
     
 }

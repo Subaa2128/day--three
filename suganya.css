@@ -214,3 +214,50 @@ address{
     font-size: 12px;
     padding: 8px;
 }
+
+@media (max-width:786px){
+    .heading_view{
+        width: 100%;
+       
+      
+    }
+    .heading{
+        
+        width: 300px;
+        
+        
+    }
+
+    .view{
+        display: none;
+    }
+
+    .container{
+        margin-top: 150px;
+        grid-template-columns: 1fr;
+        place-items: center;
+        justify-content: center;
+    }
+    .box{
+        grid-template-columns: 1fr;
+       
+    }
+    .left{
+        margin-bottom: 50px;
+    }
+
+    .container .imagebx{
+        display: flex;
+        
+       justify-content: center;
+    }
+
+    .imagebx h5{
+        margin-left: 50px;
+    }
+    .heading h1{
+        font-size: 30px;
+        margin-left: 90px;
+       
+    }
+}

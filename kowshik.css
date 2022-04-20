@@ -276,6 +276,7 @@ position: relative;
     height: 100%;
   }
   .header-2{
+    padding: auto;
     grid-template-columns: 1fr;
   }
 
@@ -285,8 +286,13 @@ position: relative;
 
   .navbar{
 
-    padding: .5em 5em;
+    padding: .5em 4em;
 
+  }
+
+  .navbar h1{
+    font-size: 20px;
+    padding-right: 20px;
   }
   .search{
     display: block;
@@ -294,7 +300,9 @@ position: relative;
 .dropdown-list .two,.dropdown-list .three, .line, .line-2,.footer,.dropdown-list h1,.list-items .one h3{
   display: none;
 }
-
+.right-1 h1{
+  font-size:20px;
+}
 .sign{
   margin-top: 50px;
   padding: 1em;
