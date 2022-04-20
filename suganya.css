@@ -1,8 +1,10 @@
 *{
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 95% ;
+}
+.center{
+    margin: 0 30px 0;
 }
 .heading_view{
     display: grid;
@@ -42,7 +44,7 @@
 .head h1{
     text-align: center;
     font-family: 'Ledger', serif;
-    font-size: 45px;
+    font-size: 46px;
     line-height: 45px;
 }
 .para p{
@@ -64,14 +66,16 @@
     max-width: 600px;
 }
 .imagebx img{
-    height: 13rem;
-    width: 15rem;
+    height: 300px;
+    width: 100%;
     cursor: pointer;
     opacity: 1;
+    object-fit: cover;
 }
 .imagebx img:hover{
     opacity: 0.8;
 }
+
 .imagebx h5{
     position: absolute;
     left: -12px;
@@ -90,6 +94,7 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding: 2em;
+    font-size: 40px;
 }
 .user h5 {
     line-height: 50px;
@@ -100,8 +105,7 @@
     color: rgb(156, 149, 149);
 }
 .image_main img{
-    width: 90%;
-    height: 60vh;
+    width: 100%;
 }
 .btn{
     text-align: center;
@@ -139,7 +143,8 @@ button:hover{
 .box{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    
   
 }
 @keyframes mymove { 
@@ -170,6 +175,7 @@ button:hover{
     font-family: 'Akshar', sans-serif;
    margin-top: 10px;
    cursor: pointer;
+   font-size: 30px;
 }
 address{
     font-size: 2px;
@@ -178,6 +184,7 @@ address{
     text-decoration: none;
     color: black;
 }
+
 .para_main h4{
     line-height: 50px;
     border-bottom: 1px solid rgb(223, 219, 219);
@@ -203,6 +210,7 @@ address{
     font-family: 'Akshar', sans-serif;
     font-size: 48px;
     cursor: pointer;
+
 }
 .technology h1:hover{
     text-decoration: underline;
@@ -213,4 +221,102 @@ address{
     font-family: sans-serif;
     font-size: 12px;
     padding: 8px;
+    position: relative;
+    transform: translateY(-20px);
 }
+
+@media (max-width:786px){
+   .heading h1{
+        width: 300px;
+        margin-left: 6px;
+    }
+    .view{
+        padding: 0 0px;
+    }
+    .container{
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        place-items: center;
+        justify-content: center;
+    }
+    .head h1{
+        font-size: 35px;
+    }
+    .para p{
+        margin-left: 30px;
+    }
+    .user h5{
+        margin-left: 20px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        margin-bottom: 50px;
+    }
+    .container .imagebx{
+        display: flex;
+        
+       justify-content: center;
+    }
+    .heading h1{
+        font-size: 30px;
+        margin-left: 90px;
+    }
+}
+ @media (max-width:450px) {
+    .heading h1{
+        margin: 0;
+        text-align: left;
+    }
+    .view h5{
+        margin-right: 50px;
+    }
+    .technology h1{
+        font-size: 23px;
+    }
+}
+@media (max-width:768px){
+    .heading_view{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .heading_view .view h5{
+        margin: 0;
+    }
+
+    .heading_view .heading h1{
+        width: fit-content;
+    }
+}
+@media (max-width: 320px){
+    
+    .heading h1{
+        font-size: 20px;
+        margin-left: -15px;
+    }
+    .view h5{
+        width: 40px;
+        height: 40px;
+        font-size: 5px;
+    }
+    .main_head h1{
+        margin-left: -30px;
+        font-size: 25px;
+    }
+    .box{
+        margin-left: -10px;
+    }
+    .para_main h1{
+        font-size: 17px;
+    }
+    .right_1{
+        margin-left: -40px;
+    } 
+}
+
+
+

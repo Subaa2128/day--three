@@ -4,25 +4,39 @@
     box-sizing: border-box;
     background-color: #1a191d;
     font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
-.header h1{
-    margin: 50px 0 0 140px;
-    color: #d9d7dd;
+
+body{
+    width: 100%;
+    overflow-x: hidden;
 }
-.header h2{
-    margin: 30px 0 0 140px;
-    color: #00E676;
+.hero{
+
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+
+.header h1,.header h2{
+    color: white;
+    margin-bottom: 40px;
 }
 .icon{
-    margin:50px 0 0 140px;
- }
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
 .icon a{
     text-decoration: none;
     color: white;
+    padding: 5px;
 }
 .icon .fab{
-    padding: 12px;
-    margin: 5px;
+    padding: 15px;
     border-radius: 50%;
 }
 .icon .fab.fa-facebook {
@@ -39,78 +53,136 @@
     background-color:  #bb0000;
 } 
 .image_one img{
-    margin: 40px 0 0 140px;
-    background-size: cover;
-    width: 80%;
-    cursor: pointer;
-}
-.image_one img:hover{
-    opacity: 0.7;
+    width: 100%;
 }
 .image_one p{
+    margin-bottom: 20px;
     color: gray;
-    font-size: 25px;
-    margin-left: 140px;
-    margin-top: -60px;
+   
 }
+.para{
+    color: white;
+}
+
 .para p{
-    margin: 80px 90px 190px 0;
-    margin-left: 140px;
-    margin-right: 190px;
-    color: #a1a3ad;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 2;
 }
 .para i{
-    color: #00dbbc;
-    padding: 10px;
-    margin: 10px 0 0 10px;
-    font-size: 19px;
+    color: aquamarine;
 }
+.blog{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main{
+    color: white;
+    padding: 2em;
+      
+}
+
 .main h4{
-    color: #00c609;
-    margin-left: 140px;
-    margin-bottom: 10px;
-    margin-top: 15px;
+    color: greenyellow;
+    margin-bottom: 30px;
 }
 .main p{
-    color: white;
-    margin: 0 600px 0 140px;
-    line-height: 30px;
-    font-size: 18px;
-    color: #a1a3ad;
+    line-height: 35px;
+    margin-bottom: 30px;
 }
-.image_two img{
-    margin: -690px 0px 0 1000px;
-    background-size: cover;
-    width: 25%;
-    cursor: pointer;
+
+
+.main img{
+    max-width: 60%;
+    margin: -610px 0px 0px 850px;
 }
-.image_two img:hover{
-    opacity: 0.9;
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .image_three img{
-    margin: 50px 0 0 300px;
-    background-size: cover;
-    width: 60%;
-    cursor: pointer;
+    max-width: 90%;
+    align-items: center;
+    margin-right: 30%;
 }
-.image_three img:hover{
-    opacity: .6;
-}
+
 .image_three p{
-    color: grey;
-    margin-bottom: 60px;
-    margin-left: 20%;
-    font-size: 15px;
-    color: #a1a3ad;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.para_1{
+    color: white;
+    line-height: 1.5;
+    
 }
 .para_1 p{
-    color: white;
-    margin: 50px 140px 0 140px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #a1a3ad;
+    margin-bottom: 60px;
 }
+
 .para_1 hr{
-    margin:50px 140px 50px 140px;
+    margin-bottom: 70px;
 }
+
+
+@media (max-width:1350px){
+
+    .blog{
+        max-height: auto;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:790px){
+    .header{
+        text-align: center;
+        margin: 0px 35px;
+    }
+    .header h1{
+        text-align: center;
+        font-size: 0px;
+    }
+    .icon{
+        text-align: center;
+    }
+    .blog{
+        max-height: auto;
+        grid-template-columns: 1fr;
+    }
+     .footer p{
+         margin: 10px 0px 10px 20px;
+     }
+
+    .main img{
+        max-width: 100%;
+        margin: 10px 10px ;
+    }
+    .image_three img{
+        max-width: 96%;
+        margin: -10px 0px 0px 20px;
+    }
+}
+@media (max-width:480px){
+    .hero{
+        margin-top: 5px;
+    }
+    .main p{
+        margin: 20px 0px 70px 0px;
+        text-align: center;
+    }
+    .main h4{
+        margin: -50px 0px 30px 0px;
+        text-align: center;
+    }
+    .main img{
+       max-width: 100%;
+       margin: 10px 0px ;
+    }
+    .image_three img{
+        margin: -40px 0px 20px 0px;
+    }
+}
+    
+
+ 
+
